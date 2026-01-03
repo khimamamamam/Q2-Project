@@ -10,7 +10,7 @@
 
     <style>
         body{
-    background-image: url('https://obmontessori.orangeapps.ph/landing/obmontessori/images/FV%20Facade.jpg');
+    background-color: #fff8e3;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,6 +84,57 @@
                 0 0 20px rgba(0, 0, 0, 0.2);
             cursor: pointer;
         }
+
+        .center-one-container, .center-two-container  {
+           display: flex; 
+           justify-content: center;
+           align-items: center;
+           height: 40vh;
+        }
+
+        .box-one, .box-two {
+            width: 1800px;
+            height: 300px;
+            max-width: 90%;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            padding: 20px
+            
+        }
+
+        .inner-one-container, .inner-two-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; 
+            flex-wrap: wrap;
+        }
+
+        .inner-one, .inner-two {
+            width: 270px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+
+        .inner-one img, .inner-two img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
     </style>
 </head>
 
@@ -124,6 +175,37 @@
     </div>
 </nav>
 
+<br>
+
+<div class="center-one-container">
+<div class="box-one">
+    <h4>Campuses</h4>
+
+    <div class="inner-one-container">
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+    </div>
+</div>
+</div>
+
+<br><br>
+
+<div class="center-two-container">
+<div class="box-two">
+    <h4>Programs</h4>
+
+    <div class="inner-one-container">
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+        <div class="inner-one"></div>
+    </div>
+</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
