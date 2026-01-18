@@ -92,26 +92,35 @@
         }
 
         .about-section {
-            background-color: #ffffff;
-            margin: 20px;
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow:
-        0 0 15px rgba(100, 183, 227, 0.5),
-        0 0 30px rgba(100, 183, 227, 0.35),
-        0 0 45px rgba(100, 183, 227, 0.25),
-        0 0 60px rgba(100, 183, 227, 0.15);
-        }
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.75)
+    );
+
+    margin: 20px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow:
+        -25px 0 45px rgba(100, 183, 227, 0.35),
+         25px 0 45px rgba(100, 183, 227, 0.35),
+         0 10px 30px rgba(0, 0, 0, 0.12),
+         inset 0 0 25px rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
 
         .photo-gallery {
-            background: rgba(228, 245, 255, 0.565);
+            background: rgba(159, 214, 247, 0.565);
             padding: 15px;
             border-radius: 20px;
             display: grid;
             grid-template-columns: 1.5fr 1fr;
             grid-template-rows: 180px 180px;
             gap: 15px;
-            box-shadow: 5px 5px 15px rgba(51, 100, 138, 0.5);
+            box-shadow: 5px 5px 15px rgba(51, 100, 138, 0.7);
         }
 
 
@@ -148,6 +157,13 @@
             align-items: center;
             justify-content: center;
         }
+
+        .butterfly-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
 
         .about-title {
             color: #33658A;
@@ -188,7 +204,7 @@
 }
 
 .location-wrapper{
-    border: 25px solid transparent; /* keeps current border */
+    border: 25px solid transparent;
     width: 95%;
     max-width: 1400px;
     margin: 80px auto;
@@ -209,7 +225,7 @@
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* centers vertically */
+    align-items: center;
     box-shadow: 0 12px 30px rgba(0,0,0,0.18); 
 }
 
@@ -422,8 +438,10 @@
                 
                 <div class="pictures-btn-container">
                     <div class="butterfly-icon">
-                        <img src="https://obmontessori.orangeapps.ph/landing/obmontessori/images/ob-logo.png" style="width: 25px;" alt="icon">
+                        <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-69/school_profile/1724046771-1024.png"
+                             alt="OBMC Logo">
                     </div>
+                    
                     <h4 class="mb-0">Pictures</h4>
                 </div>
             </div>
